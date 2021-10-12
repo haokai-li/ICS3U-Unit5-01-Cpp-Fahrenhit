@@ -35,5 +35,8 @@ void calculateFahrenheit() {
 }
 
 main() {
+    // This function just call other functions
+
+    // call functions
     calculateFahrenheit();
 }
