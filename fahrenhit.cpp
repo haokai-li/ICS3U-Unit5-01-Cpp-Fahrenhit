@@ -2,16 +2,16 @@
 //
 // Created by: Haokai
 // Created on: Oct 2021
-// This Program is about loop and if
+// This Program is about fahrenheit
 #include <iostream>
 #include <string>
 
-void calculateFahrenhit() {
-    // This Program is about loop and if
+void calculateFahrenheit() {
+    // This Program is about fahrenheit
     std::string celiusString;
     float celiusNumber;
 
-    float fahrenhitNumber;
+    float fahrenheitNumber;
 
     std::cout << "Please enter a temperature (°C): ";
     std::cin >> celiusString;
@@ -21,10 +21,10 @@ void calculateFahrenhit() {
     try {
         celiusNumber = std::stof(celiusString);
 
-        fahrenhitNumber = (9.0 / 5.0) * celiusNumber + 32;
+        fahrenheitNumber = (9.0 / 5.0) * celiusNumber + 32;
         // output
         std::cout << celiusNumber << "°C is equal to "
-        << fahrenhitNumber << "°F." << std::endl;
+        << fahrenheitNumber << "°F." << std::endl;
     } catch (std::invalid_argument) {
         // output
         std::cout << "You didn't enter an integer." << std::endl;
@@ -35,5 +35,5 @@ void calculateFahrenhit() {
 }
 
 main() {
-    calculateFahrenhit();
+    calculateFahrenheit();
 }
